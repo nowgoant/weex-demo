@@ -1,0 +1,49 @@
+<template>
+  <div class="container">
+   <section class="flex-top">
+     <div class="flex-top-item"> 
+       <text class="flex-top-item-title">白条可用额度</text>    
+       <text class="flex-top-item-amount">12,272.28</text>  
+      </div>
+    <div class="flex-top-item"> 
+       <text class="flex-top-item-title">金条可用额度</text>    
+       <text class="flex-top-item-amount">30,000</text>  
+     </div>
+    <div class="flex-top-item"> 
+       <text class="flex-top-item-title">小白信用</text>    
+       <text class="flex-top-item-amount">98.5</text>  
+    </div>
+   </section>     
+  
+  </div>
+</template>
+
+<style>
+  .container{
+    color:#333;
+    background-color: #fff;
+  }
+
+  .flex-top{
+    display:flex;
+    flex-direction: row;
+    border-bottom: 1px solid #ccc;   
+  }
+
+  .flex-top-item{
+    flex:1;    
+    padding-left: 32;
+    padding-top: 20;
+    padding-bottom: 20;
+  }
+
+  .flex-top-item-title{
+    margin-bottom: 5;
+    font-size: 24;
+    color:#999;
+  }
+
+  .flex-top-item-amount{
+    text-align:left;
+  }
+</style>

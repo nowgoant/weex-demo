@@ -1,0 +1,18 @@
+<template>
+  <div class="wxc-hello-world"></div>
+</template>
+
+<style>
+.wxc-hello-world {}
+</style>
+
+<script>
+module.exports = {
+  data: {
+
+  },
+  methods: {
+
+  }
+};
+</script>

@@ -1,0 +1,314 @@
+<template>
+  <!-- <scroller id="main-scroller" class="scroller" show-scrollbar="true" scroll-direction="vertical">
+    <div repeat="{{list}}" class="cell {{gender}}">
+        <image class="thumb" src="{{avatar}}"></image>
+        <text class="title">{{nickname + ' ' + lastName}}</text>
+    </div>
+
+    <text style="font-size: {{size}}" onclick="handler('majun',$event)">
+      {{firstName + ' ' + lastName}}
+    </text>
+
+  </scroller> -->
+  <scroller class="container" show-scrollbar="true" scroll-direction="vertical">
+       <section class="flex-row border-bottom jrm-bg-color-fff">
+           <div class="flex-top-item">
+               <text class="flex-top-item-title">白条可用额度</text>
+               <text class="flex-top-item-amount">12,272.28</text>
+           </div>
+           <div class="flex-top-item">
+               <text class="flex-top-item-title">金条可用额度</text>
+               <text class="flex-top-item-amount">30,000</text>
+           </div>
+           <div class="flex-top-item">
+               <text class="flex-top-item-title">小白信用</text>
+               <text class="flex-top-item-amount">98.5</text>
+           </div>
+       </section>
+       <section class="flex-row jrm-bg-color-fff">
+           <div class="flex-top-item border-right" style="flex-direction:row;">
+              <image src="//img12.360buyimg.com/jrpmobile/jfs/t1489/45/730353072/1301/47ac170f/55a72279N36c3bfa1.png" class="flex-top-item-image" ></image>
+              <div class="flex-top-item-1">
+                  <text class="jrm-title">
+                    打白条
+                  </text>
+                  <text class="jrm-desp">
+                    扫码
+                  </text>
+              </div>
+           </div>
+           <div class="flex-top-item" style="flex-direction:row;">
+             <image src="//img12.360buyimg.com/jrpmobile/jfs/t1489/45/730353072/1301/47ac170f/55a72279N36c3bfa1.png" class="flex-top-item-image" ></image>
+             <div class="flex-top-item-1">
+                 <text class="jrm-title">
+                   还款
+                 </text>
+                 <text class="jrm-desp jrm-color-FF801A">
+                   近7日待还133.00
+                 </text>
+             </div>
+           </div>
+       </section>
+
+       <!-- 我的权益 -->
+       <section class="jrm-bg-color-fff jrm-mt20">
+          <div class="jrm-list-bar">
+            <text class="list-bar-item">我的权益</text>
+          </div>
+          <div class="flex-row list-item">
+            <div class="flex-justify-center">
+              <span class="list-left-image"></span>
+            </div>
+            <div class="flex-1 flex-justify-center jrm-pl32">
+              <text class="list-content-title">领白条券</text>
+              <text class="list-content-desp">Kindle立减100</text>
+            </div>
+            <div class="list-right-image1">
+
+            </div>
+            <div class="flex-justify-center">
+              <span class="list-right-image2 "></span>
+            </div>
+          </div>
+          <div class="flex-row list-item">
+            <div class="flex-justify-center">
+              <span class="list-left-image"></span>
+            </div>
+            <div class="flex-1 flex-justify-center jrm-pl32">
+              <text class="list-content-title">买车</text>
+              <text class="list-content-desp">可借额度9000元</text>
+            </div>
+            <div class="list-right-image1">
+
+            </div>
+            <div class="flex-justify-center">
+              <span class="list-right-image2 "></span>
+            </div>
+          </div>
+       </section>
+
+      <!-- 万能的白条 -->
+      <section class="jrm-bg-color-fff jrm-mt20">
+         <div class="jrm-list-bar">
+           <text class="list-bar-item">万能的白条</text>
+         </div>
+         <section class="wn-list flex-row jrm-border-top">
+           <div class="wn-lite-item flex-row jrm-border-right">
+             <div class="wn-image-area">
+
+             </div>
+             <div class="wn-text-area">
+               <text class="wn-text-title">租房/买房/装修</text>
+               <text class="wn-text-desp">预约装修送豪礼</text>
+             </div>
+           </div>
+           <div class="wn-lite-item flex-row">
+             <div class="wn-image-area">
+
+             </div>
+             <div class="wn-text-area">
+               <text class="wn-text-title">买车</text>
+               <text class="wn-text-desp">可借额度9000元</text>
+             </div>
+           </div>
+         </section>
+         <section class="wn-list flex-row jrm-border-top">
+           <div class="wn-lite-item flex-row jrm-border-right">
+             <div class="wn-image-area">
+
+             </div>
+             <div class="wn-text-area">
+               <text class="wn-text-title">买车</text>
+               <text class="wn-text-desp">可借额度9000元</text>
+             </div>
+           </div>
+           <div class="wn-lite-item flex-row">
+             <div class="wn-image-area">
+
+             </div>
+             <div class="wn-text-area">
+               <text class="wn-text-title">买车</text>
+               <text class="wn-text-desp">可借额度9000元</text>
+             </div>
+           </div>
+         </section>
+      </section>
+
+      <!-- 每日精选 -->
+      <section class="jrm-bg-color-fff jrm-mt20">
+        <div class="jrm-list-bar">
+          <text class="list-bar-item">每日精选</text>
+        </div>
+        <section class="ds-item jrm-border-top">
+          <div class="ds-item-top flex-row flex-items-center">
+            <div class="ds-item-top-image">
+
+            </div>
+            <div class="ds-item-top-content flex-row">
+              <text class="ds-item-top-title">安居白居易</text>
+              <text class="ds-item-top-line jrm-color-999">|</text>
+              <text class="ds-item-top-desp jrm-color-999">6小时前</text>
+            </div>
+
+          </div>
+          <div class="ds-item-content flex-row">
+            <div class="ds-item-content-left">
+              <text class="ds-item-content-left-text">白条周年庆·京东商城全场期免息券限时先抢先得!</text>
+              <div class="ds-item-content-left-bottom flex-row">
+                <span class="ds-item-content-left-bottom-icon">
+
+                </span>
+                <text class="ds-item-content-left-bottom-text">68</text>
+                <span class="ds-item-content-left-bottom-icon jrm-ml37">
+
+                </span>
+                <text class="ds-item-content-left-bottom-text">2</text>
+              </div>
+
+            </div>
+            <div class="ds-item-content-right">
+
+            </div>
+
+          </div>
+        </section>
+        <section class="ds-item jrm-border-top">
+          <div class="ds-item-top flex-row flex-items-center">
+            <div class="ds-item-top-image">
+
+            </div>
+            <div class="ds-item-top-content flex-row">
+              <text class="ds-item-top-title">安居白居易</text>
+              <text class="ds-item-top-line jrm-color-999">|</text>
+              <text class="ds-item-top-desp jrm-color-999">6小时前</text>
+            </div>
+
+          </div>
+          <div class="ds-item-content flex-row">
+            <div class="ds-item-content-left">
+              <text class="ds-item-content-left-text">白条周年庆·京东商城全场期免息券限时先抢先得!</text>
+              <div class="ds-item-content-left-bottom flex-row">
+                <span class="ds-item-content-left-bottom-icon">
+
+                </span>
+                <text class="ds-item-content-left-bottom-text">68</text>
+                <span class="ds-item-content-left-bottom-icon jrm-ml37">
+
+                </span>
+                <text class="ds-item-content-left-bottom-text">2</text>
+              </div>
+
+            </div>
+            <div class="ds-item-content-right">
+
+            </div>
+
+          </div>
+        </section>
+      </section>
+   </scroller>
+</template>
+
+<style>
+ .container {color: #333;background-color: #efeff4;}
+ .jrm-bg-color-fff{ background-color: #fff;}
+
+ .jrm-mt20{ margin-top: 20;}
+ .jrm-ml37{margin-left: 37;}
+ .jrm-pl32{padding-left: 32;}
+ .jrm-title {font-size: 32;line-height: 46;}
+ .jrm-desp {font-size: 26;line-height: 36;color:#999;}
+
+ .jrm-color-FF801A{color: #FF801A;}
+ .jrm-color-999{color:#999;}
+
+ .jrm-border-top{border-top: 1px solid #ccc;}
+ .border-right,.jrm-border-right {border-right: 1px solid #ccc;}
+ .border-bottom {border-bottom: 1px solid #ccc;}
+
+ .flex-row {flex-direction: row;}
+ .flex-justify-center{justify-content: center;}
+ .flex-items-center{align-items: center;}
+ .flex-1{ flex: 1;}
+
+ .flex-top-item {flex: 1;padding-left: 32;padding-top: 20;padding-bottom: 20; }
+ .flex-top-item-title {margin-bottom: 5;font-size: 24;color: #999;}
+
+ .flex-top-item-amount { text-align: left;}
+ .flex-top-item-image {width:48;height:48;}
+ .flex-top-item-1 { margin-left: 32; font-size: 32;line-height: 46;}
+ .list-bar-item{height: 112;line-height: 112;padding-left: 32;}
+
+ .list-item{padding: 32; border-top: 1px solid #ccc;}
+ .list-left-image{width:72;height:72;background-color: #979797;}
+ .list-content-title{font-size: 32;line-height: 45;}
+ .list-content-desp{font-size: 24;line-height: 33;color:#999;}
+ .list-right-image1{width:88;height:88;background-color: #979797;}
+ .list-right-image2{width:44;height:44;background-color: #979797;}
+
+ .wn-list{flex-wrap:wrap;}
+ .wn-lite-item{flex:1; height: 160; padding-top: 37;padding-left:32;}
+ .wn-image-area{margin-top: 5;width:48;height:48;background-color: #979797;}
+ .wn-text-area{margin-left: 38;}
+ .wn-text-title{font-size: 32;line-height: 46;}
+ .wn-text-desp{font-size: 26;line-height: 36;color: #999;}
+
+ .ds-item{border-top:1px solid #ccc;padding:32;}
+
+ .ds-item-top-image{width: 40;height: 40;background-color: #979797;}
+ .ds-item-top-content{height: 40;line-height: 40;}
+ .ds-item-top-title{margin-left: 18;font-size: 22;}
+ .ds-item-top-line{margin-left: 12;margin-right: 12;}
+ .ds-item-top-desp{font-size: 22;}
+ .ds-item-content{margin-top: 20;}
+ .ds-item-content-left{flex:1;}
+ .ds-item-content-left-text{font-size: 32;line-height: 52;padding-right: 32;padding-bottom: 16;}
+ .ds-item-content-left-bottom{height: 40;line-height: 40;}
+ .ds-item-content-left-bottom-icon{width: 32;height:32;background-color: #979797;}
+ .ds-item-content-left-bottom-text{font-size: 29;color: #999;margin-left: 14;}
+ .ds-item-content-right{width:140;height:140;background-color: #979797;}
+
+</style>
+<script>
+  module.exports = {
+    ready: function () {
+      // var animation = require('@weex-module/animation');
+      // var testEl = this.$el('main-scroller');
+      // animation.transition(testEl, {
+      //   styles: {
+      //     color: '#FF0000',
+      //     transform: 'translate(1, 1)'
+      //   },
+      //   duration: 0, //ms
+      //   timingFunction: 'ease',
+      //   transform-origin: 'center center',
+      //   delay: 0 //ms
+      // }, function () {
+      //   nativeLog('animation finished.')
+      // })
+    },
+    data: {
+      size: 48,
+      title: 'Alibaba Weex Team',
+      firstName: 'John',
+      lastName: 'Smith',
+      list: [
+          {gender: 'male', nickname: 'Li Lei', avatar: 'http://t.cn/RGE3uo9'},
+          {gender: 'female', nickname: 'Han Meimei', avatar: 'http://t.cn/RGE31hq'},
+          {gender: 'male', nickname: 'Li Lei', avatar: 'http://t.cn/RGE3uo9'},
+          {gender: 'female', nickname: 'Han Meimei', avatar: 'http://t.cn/RGE31hq'},
+          {gender: 'male', nickname: 'Li Lei', avatar: 'http://t.cn/RGE3uo9'},
+          {gender: 'female', nickname: 'Han Meimei', avatar: 'http://t.cn/RGE31hq'},
+          {gender: 'male', nickname: 'Li Lei', avatar: 'http://t.cn/RGE3uo9'},
+          {gender: 'female', nickname: 'Han Meimei', avatar: 'http://t.cn/RGE31hq'}
+      ]
+
+    },
+    methods: {
+      handler: function (arg1, e) {
+        // TODO
+        console.log('[arg1,e]',arg1,e);
+      }
+    }
+  }
+</script>
